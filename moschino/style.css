@@ -1,0 +1,355 @@
+/* herr-von-muellerhoff-regular - latin */
+@font-face {
+    font-family: 'Herr Von Muellerhoff';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/herr-von-muellerhoff-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/herr-von-muellerhoff-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/herr-von-muellerhoff-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/herr-von-muellerhoff-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/herr-von-muellerhoff-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/herr-von-muellerhoff-v15-latin-regular.svg#HerrVonMuellerhoff') format('svg'); /* Legacy iOS */
+  }
+  /* quattrocento-sans-regular - latin */
+@font-face {
+    font-family: 'Quattrocento Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/quattrocento-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/quattrocento-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/quattrocento-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/quattrocento-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/quattrocento-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/quattrocento-sans-v18-latin-regular.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* oswald-regular - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/oswald-v49-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/oswald-v49-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/oswald-v49-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/oswald-v49-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/oswald-v49-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/oswald-v49-latin-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+  }
+  
+/* variables */
+:root{
+    --fond-gris:#333;
+    --texte-blanc:#FFF;
+    --texte-noir:#000;
+}
+/* reset */
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1200px;
+    width:100%;
+    margin:0 auto;
+}
+
+#pub{
+    background-color: var(--fond-gris);
+    color:var(--texte-blanc);
+    text-align: center;
+    padding:30px 0;
+}
+#pub p{
+    font-family: 'Quattrocento Sans';
+    font-size:1.2rem;
+}
+/* ==========================header========================== */
+#bandeau{
+    text-align: center;
+    padding-top:30px;
+}
+#bandeau h1{
+    font-family: 'Herr Von Muellerhoff';
+    font-size:3.5rem;
+    /* margin-top:30px; */
+    font-weight:500;
+}
+#bandeau h1 a{
+    color:var(--texte-noir);
+}
+#bandeau p.titre{
+    font-style: normal;
+    font-family: 'Quattrocento Sans';
+    font-size:1.2rem;
+}
+/* Menu */
+#menuprincipal ul{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    padding: 30px 0;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+}
+#menuprincipal #burger{
+    margin-top:20px;
+    font-size:2.5rem;
+    display:none;/* masque burger en grand */
+}
+#menuprincipal #burger a{
+    color:white;
+}
+#menuprincipal #burger a:hover{
+    color:#fcdf3d;
+}
+#menuprincipal ul li{
+    margin:0 15px;
+    font-family: 'Oswald';
+    font-size:1.2rem;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+#menuprincipal ul li a{
+    color:var(--texte-noir);
+}
+#menuprincipal ul li a:hover,
+#menuprincipal ul li a.choix{
+    color:#fcdf3d;
+}
+/* Section liste produits */
+
+#listeproduits{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:30px;
+
+}
+#listeproduits .produit{
+    width:31%;
+    box-shadow: rgba(0, 0, 0, 0.033) ;
+    box-shadow: 0 2px 4px 0 ;
+    transition: 0.3s;
+    margin:30px 0;
+    padding-bottom:10px;
+  
+}
+#listeproduits .produit:hover{
+    box-shadow: rgba(0, 0, 0, 0.133) ;
+    box-shadow: 0 4px 8px 0 ;
+}
+#listeproduits .produit h2{
+    text-transform:uppercase;
+    font-family: 'Oswald';
+    font-size:1.1rem;
+    padding-left:10px;
+}
+
+#listeproduits .produit img{
+    width:100%;
+    /* margin-top:30px; */
+
+}
+#listeproduits .produit img:hover{
+    /* opacity:0.5; */
+
+}
+#listeproduits .produit p a,
+#listeproduits .produit p {
+    color:rgb(128, 128, 128);
+    text-transform: lowercase;
+    padding-left:5px;
+}
+#listeproduits .produit p a:hover{
+    color:rgba(128, 128, 128, 0.389);
+}
+#pagination{
+    width:100%;
+    text-align: center;
+    margin:30px 0;
+}
+
+#pagination p a{
+    background-color: rgb(179, 177, 177);
+    padding: 5px 15px;
+    color:white;
+    margin:15px 5px;
+}
+
+#pagination p a i{
+    
+}
+#pagination p a:hover{
+    background-color:#fcdf3d;
+}
+/*====================footer==========================*/
+#pied{
+    background-color: var(--fond-gris);
+    text-align: center;
+    color:white;
+    padding: 30px 0;
+}
+#pied h3{
+    font-family: 'Herr Von Muellerhoff';
+    font-size:2.5rem;
+}
+#pied h3 a{
+    color:white;
+}
+#reseaux ul{
+    display:flex;
+    justify-content: center;
+}
+#reseaux  ul li{
+    margin: 10px;
+}
+#reseaux ul li a i{
+    font-size: 2rem;
+    color: #FFF;
+}
+#reseaux ul li a i:hover{
+    color:#fcdf3d;
+}
+#pied p{
+    font-family: 'roboto';
+    margin-top:15px;
+}
+
+/*============= modif slider =============*/
+.nivo-caption{
+    background-color: transparent;
+    top:40%;
+    left:40%;
+    font-size:5rem;
+}
+.nivo-controlNav{
+    display:none;
+}
+/*==================Page de Contact==============================================*/
+.titrepage{
+    font-family: 'Quattrocento Sans';
+    font-size:1.5rem;
+    margin:30px 0 15px;
+}
+#map iframe{
+    width:100%;
+    height:350px;
+    margin-bottom:30px;
+}
+#formulaire {
+    display:flex;
+    flex-wrap:wrap;
+}
+#formulaire .colonne{
+    width:48%;
+    font-size:18px;
+    font-family: 'roboto';
+    padding-left:20px;
+}
+#formulaire .colonne address{
+    font-style:normal;
+}
+#formulaire .colonne h5{
+    font-size:20px;
+    margin-bottom:15px;
+}
+#formulaire form p{
+    margin-bottom:5px;
+    font-size:18px;
+    font-family: 'Roboto';
+}
+#formulaire form p label{
+    width:97px;
+    display:inline-block;
+    vertical-align:top;
+}
+#formulaire form p input[type=text],
+#formulaire form p input[type=email],
+#formulaire form p textarea{
+    background-color: var(--fond-gris);
+    color:var(--texte-blanc);
+    width:220px;
+    padding:5px;
+    border-radius:3px;
+}
+
+#formulaire form p input[type=submit]{
+    background-color: black;
+    border-radius:3px;
+    color:var(--texte-blanc);
+    padding:10px 20px;
+}
+#formulaire form p input[type=submit]:hover{
+    background-color: var(--fond-gris);
+}
+
+
+/*=====================================Mediaqueries=========================================*/
+
+@media screen and (max-width:768px){
+
+    body{
+        background-color: pink;
+    }
+    #listeproduits .produit{
+        width:48%;
+    }
+    #formulaire .colonne{
+        padding-left:20px;
+        width:80%;
+        margin-bottom:20px;
+    }
+
+}
+@media screen and (max-width:576px){
+
+    body{
+        background-color: grey;
+    }
+    #listeproduits{
+        justify-content: center;
+    }
+    #listeproduits .produit{
+        width:96%;
+        margin-top:0;
+    }
+    .slider-wrapper{
+        display:none;
+    }
+    #menuprincipal #burger{
+        display:block;
+    }
+
+    #menuprincipal ul{
+        display:none;
+    }
+    #formulaire{
+        justify-content: center;
+    }
+    #formulaire .colonne{
+        width:80%;
+       
+    }
+
+}
