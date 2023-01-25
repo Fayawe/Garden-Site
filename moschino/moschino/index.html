@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moschino,toute la mode</title>
+
+    <!-- styles pour le slider -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pub">
+        <p>-20% sur les livraisons en France métropolitaine jusqu'au 15 mars</p>
+    </div>
+    <header id="bandeau" class="container">
+        <h1>
+            <a href="index.html">Moschino</a>
+        </h1>
+        <p class="titre">Collection été</p>
+        <nav id="menuprincipal">
+            <div id="burger">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <ul>
+                <li><a href="index.html" class="choix">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenu" class="container">
+        <!-- Images et titres du slider -->
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images-mode/slider1.jpg"  alt="fille à la plage" title="#htmlcaption1" />
+                <img src="images-mode/slider2.jpg"  alt="image2" data-transition="slideInLeft"  title="#htmlcaption2"/>
+                <img src="images-mode/slider3.jpg" alt="image3" title="#htmlcaption3" />
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>Image 1 <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>Image 2 <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>Image 3 <a href="#">a link</a>. 
+            </div>
+        </div>
+        <section id="listeproduits">
+            <article class="produit">
+                <img src="images-mode/01.jpg" alt="sunset beach">
+                <h2>Sunset Beach</h2>
+                <p><a href="#">Femme</a> / <a href="#">Jaune</a> / <a href="#">été</a></p>
+            </article>
+            <article class="produit">
+                <img src="images-mode/02.jpg" alt="Earl of Moreland">
+                <h2>Earl of Moreland</h2>
+                <p><a href="#">chapeau</a> / <a href="#">femme</a> / <a href="#">jaune</a></p>
+            </article>
+            <article class="produit">
+                <img src="images-mode/03.jpg" alt="Eliza and John">
+                <h2>Eliza and John</h2>
+                <p><a href="#">été</a> / <a href="#">femme</a> / <a href="#">jaune</a></p>
+            </article>
+            <article class="produit">
+                <img src="images-mode/04.jpg" alt="Hot Afternoon">
+                <h2>Hot Afternoon</h2>
+                <p><a href="#">Rose</a> / <a href="#">femme</a> / <a href="#">jaune</a></p>
+            </article>
+            <article class="produit">
+                <img src="images-mode/05.jpg" alt="Long Walks">
+                <h2>Long Walks</h2>
+                <p><a href="#">Chapeau</a> / <a href="#">été</a> / <a href="#">jaune</a></p>
+            </article>
+            <article class="produit">
+                <img src="images-mode/06.jpg" alt="Twilight">
+                <h2>Twilight</h2>
+                <p><a href="#">Chapeau</a> / <a href="#">Femme</a> / <a href="#">été</a></p>
+            </article>
+
+            <footer id="pagination">
+                <p><a href="#">1</a> <a href="#">2</a> <a href="#">SUITE &gt;&gt;</p>
+            </footer>
+        </section>
+    </main>
+    <footer id="pied">
+        
+        <h3>
+            <a href="index.html">Moschino</a>
+        </h3>
+        <div id="reseaux">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+        <p>&copy; Moschino - Copyright 2022</p>
+    </footer>
+    <!-- Scripts du slider -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    $('#menuprincipal #burger').click(function(){
+        $('#menuprincipal ul').slideToggle(1500);
+    });
+    </script>
+</body>
+</html>
